@@ -31,31 +31,32 @@ body{
 .lista li:last-child{
   margin-right:25px;
 }
+/* essa parte está diferente pois consiste numa animação finita*/
 .navbar {
-  background-image:linear-gradient(163deg, #4964da 17%, rgba(146, 73, 221, 0.8) 29.6%, rgba(176, 60, 196, 0.6) 42.2%, rgba(192, 55, 173, 0.4) 54.8%, rgba(217, 46, 116, 0) 80%), radial-gradient(100% 100% at 10% 100%,rgba(146, 73, 221, 0.8) 0%,rgba(192, 55, 173, 0.4)20%, #cb61e8 30%, #da49e8 44.29%, #db44d7 68.57%, #da3fc8 82.86%, #df1286 100%);;
+  background-image:linear-gradient(163deg, rgb(73, 100, 218) 17%, rgba(146, 73, 221, 0.8) 29.6%, rgba(176, 60, 196, 0.6) 42.2%, rgba(192, 55, 173, 0.4) 54.8%, rgba(217, 46, 116, 0) 80%), radial-gradient(100% 100% at 10% 100%,rgba(146, 73, 221, 0.8) 0%,rgba(192, 55, 173, 0.4)20%, rgb(203, 97, 232) 30%, #da49e8 44.29%, #db44d7 68.57%, #da3fc8 82.86%, rgb(223, 18, 134) 100%);;
   background-size:400% 400%;
   margin:0;
   padding:0;
   flex-direction: row-reverse;
   display:flex;
   box-shadow: 2px 2px 10px  rgba(0,0,0,0.3);
-  animation: myAnimation 10s ease infinite;
+  animation: myAnimation 10s ease;
+  animation-fill-mode: forwards;
 }
 @keyframes myAnimation{
   0% {
   background-position: 0% 50%;
 }
-50% {
+100% {
   background-position: 100% 50%;
 }
-100% {
-  background-position: 0% 50%;
-}
-}
 
+}
+/* Aqui acaba a parte diferente
 .navbar:hover {
   animation-play-state:paused;
 }
+*/
 
 #divInicial {
   background-color: white;
@@ -70,7 +71,7 @@ body{
   margin:0% 2%;
   width: 20%;
   border-radius: 50%;
-  border: 4px solid #ADACB5;
+  border: 2px solid rgb(223, 18, 134);
 }
 #profileText{
   margin: 10% 2%;
@@ -88,4 +89,173 @@ body{
   color:black;
   font-size: 19px;
   font-weight: 400; 
+}
+
+/* animação de ondas - início*/
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)  infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 16s;
+}
+
+.parallax > use:nth-child(5) {
+  animation-delay: -6s;
+  animation-duration: 20s;
+}
+
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+.waves {
+  bottom:0;
+  position:fixed;
+  width: 100%;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+}
+
+#divHabilidades{
+  width:100%;
+  margin:0;
+  display:flex;
+}
+
+/* animação de ondas - fim*/
+
+/* Experiencias - início*/
+
+.listaIcones{
+  justify-content:space-between;
+  display:flex;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+
+}
+/* para evitar selecionar o pseudo-element de before com Javascript, criei um novo elemento, contudo deixarei aqui o CSS anterior para recordação
+.linhaTempo:before{
+  z-index: -1;
+  position: absolute;
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, rgb(255,80,80,0) 0%, rgb(73, 100, 218) 8%, rgb(73, 100, 218) 92%, rgba(255,80,80,0) 100%);
+}
+*/
+
+#linhaTempo{
+  margin: 150px 4% 0 4%;
+  display: block;
+  height: 3px;
+  background: linear-gradient(to right, rgb(255,80,80,0) 0%, rgb(73, 100, 218) 8%, rgb(73, 100, 218) 92%, rgba(255,80,80,0) 100%);
+  transition: all 10s ease-in;
+}
+
+
+
+.iconeEsferico {
+    display:block ;
+    width: 10px;
+    height: 10px;
+    margin-top:-7px;
+    margin-inline: 20px;
+    background: transparent;
+    border-radius: 10px;
+    border: 1px solid rgb(73, 100, 218);
+    z-index: 10;
+}
+.icone{
+  color:black;
+  text-align:center;
+}
+.icone p{
+  margin-top:-40px;
+  font-style: italic;
+  font-size:18px;
+  font-weight:600;
+  color:rgb(73, 100, 218);
+
+}
+
+.selecionado {
+  background:rgb(73, 100, 218);
+}
+
+.cardTempo {
+  color:black;
+  padding:1% 2%;
+  margin: 2% 10%;
+  background-color:white;
+  border-radius: 20px;
+  box-shadow: 2px 4px 12px 0px rgba(0,0,0,0.15);
+  display:flex;
+
+}
+.orderTwo{
+  order:2;
+}
+.orderOne{
+  order:1;
+}
+.cardTempo h2{
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.cardTempo em{
+  font-size:1.4em;
+  font-style: italic;
+  margin: 10px auto;
+}
+
+.cardTempo p{
+  font-size:1.2em;
+  color: #959595;
+}
+
+.fotoCard img{
+  width:300px;
+  padding-right:4%;
+  border-radius: 20%;
+  }
+.cardContent{
+  width:100%;
+  margin:0;
+  padding:0 2%;
+}
+
+/* Experiencias - fim*/
+
+#tentativa {
+  width:50%;
+}
+#outraTentativa{
+  width:50%;
+}
+#tentativa img{
+ width:350px;
 }
