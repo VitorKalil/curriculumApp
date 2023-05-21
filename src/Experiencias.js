@@ -1,7 +1,6 @@
 import React from "react"
 import cards from "./Cards.json"
 
-console.log("oi")
 export default function Experiencias() {
     const [card,setCard] = React.useState(cards[0])
     const [porcentagem,setPorcentagem] = React.useState(0)

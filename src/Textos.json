@@ -1,0 +1,54 @@
+{
+"pt":
+        {
+        "texto-inicial":
+            {   
+            "titulo":"Sobre mim",
+            "texto":"Este é um texto sobre mim nmb"
+            },
+        "Quem Sou": "Quem Sou",
+        "Historico":"Histórico",
+        "Experimentacao":"Experimentação"
+        
+        }
+    ,
+"en":
+    {
+    "texto-inicial":
+        {   
+        "titulo":"About me",
+        "texto":"This is a text about me"
+        },
+    "Quem Sou": "About me",
+    "Historico":"Background",
+    "Experimentacao":"Experiments"
+    
+    }
+    ,
+"it":
+    {
+    "texto-inicial":
+        {   
+        "titulo":"Sobre mim",
+        "texto":"Qui parliamo su chi sono io"
+        },
+    "Quem Sou": "Chi sono",
+    "Historico":"Storico",
+    "Experimentacao":"Sperimentale"
+    
+    }
+    ,
+    "de":
+    {
+    "texto-inicial":
+        {   
+        "titulo":"Über mich",
+        "texto":"Hier geht es um mich selbst"
+        },
+    "Quem Sou": "Über mich",
+    "Historico":"Lebenslauf",
+    "Experimentacao":"Versuchsfeld"
+    
+    }
+
+}

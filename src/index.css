@@ -259,3 +259,20 @@ body{
 #tentativa img{
  width:350px;
 }
+
+/*language do header*/
+#logo_header{width:20px;}
+
+#language_menu{
+  list-style: none;
+  position: absolute;
+  background: #EAE8FF;
+  transform:translateX(-80%);
+  padding:0px;
+  display:none;
+}
+
+li:hover #language_menu{display:block}
+
+#language_menu li {color:black;margin:0;display:block;padding: 15px;}
+
