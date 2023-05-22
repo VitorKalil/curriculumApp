@@ -251,14 +251,53 @@ body{
 /* Experiencias - fim*/
 
 #tentativa {
-  width:50%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#slideshow{
+  margin:0;
+  padding:0;
+  list-style: none;
+  white-space: nowrap;
+  width: 600px;
+  height: 400px;
+}
+
+#slideshow li{
+  width:100%;
+  height:100%;
+  display:inline-block
+
+}
+#slideshow li img{
+  height:100%;
 }
 #outraTentativa{
   width:50%;
 }
-#tentativa img{
- width:350px;
+
+.arrow{
+  position: absolute;
+top: 50%;
+transform: translateY(-50%);
+font-size: 40px;
+background: rgba(0,0,0,0.2);
+border-radius: 50%;
+height: 50px;
+width: 50px;
+z-index: 9;
+cursor:pointer
 }
+.left{
+  left:20px
+}
+.right{
+  right:20px
+}
+
 
 /*language do header*/
 #logo_header{width:20px;}
