@@ -3,9 +3,9 @@ import React from 'react'
 
 export default function Habilidades() {
   let id_ativo = React.useRef()
-  React.useEffect(() => { id_ativo.current = 0 },[])
-
+  React.useEffect(() => { id_ativo.current = 0},[])
   const [fotos,setFotos] = React.useState(0)
+  const[rnd,setRnd] = React.useState([Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10)])
   const [palavra,setPalavra] = React.useState('cat')
   const unsplash = createApi({
     accessKey: 'Gu8dfEXUDsSxJIcI9dn0tcAtfbIZAI4nrtjnh_3jVzo',
@@ -28,30 +28,30 @@ export default function Habilidades() {
 
   }
   function mover(evento){
-    console.log(id_ativo.current)
     var i = evento.target.className === "arrow left" ? -1 : 1
     var slide = document.querySelectorAll("#slideshow li")
     id_ativo.current = (id_ativo.current + i) < 0 ? 0 : (id_ativo.current + i)>= slide.length ? (slide.length-1) : (id_ativo.current +i)
-    console.log(id_ativo.current)
     document.querySelector("#slideshow").style.transform = "translateX( "+(id_ativo.current*-600)+"px)"
   }
 
     return (
         <div id="divHabilidades">
-          <div id="outraTentativa">
+          <div id="FormsSlider">
+            <h2>Image slider generator</h2>
+            <p>Escolha uma palavra para procurar 4 fotos aleatórias do invetário de fotos do <i>Unsplash</i></p>
             <form>
               <input type="text" placeholder="cat" id='inputFoto'
               />
             <button onClick={procurar}>Procurar</button>
             </form>
           </div>
-          <div id = "tentativa">
+          <div id = "SlideDiv">
             {id_ativo !== 0 && <div className='arrow left' onClick={mover}>&#8249;</div>}
             <ul id="slideshow">
-              <li>{fotos!==0 && <img src={fotos[0].urls.raw} alt="fotos" id="foto_1"></img>}</li>
-              <li>{fotos!==0 && <img src={fotos[1].urls.raw} alt="fotos" id="foto_2"></img>}</li>
-              <li>{fotos!==0 && <img src={fotos[2].urls.raw} alt="fotos" id="foto_3"></img>}</li>
-              <li>{fotos!==0 && <img src={fotos[3].urls.raw} alt="fotos" id="foto_4"></img>}</li>
+              <li>{fotos!==0 && <img src={fotos[rnd[0]].urls.raw} alt="fotos" id="foto_1"></img>}</li>
+              <li>{fotos!==0 && <img src={fotos[rnd[1]].urls.raw} alt="fotos" id="foto_2"></img>}</li>
+              <li>{fotos!==0 && <img src={fotos[rnd[2]].urls.raw} alt="fotos" id="foto_3"></img>}</li>
+              <li>{fotos!==0 && <img src={fotos[rnd[3]].urls.raw} alt="fotos" id="foto_4"></img>}</li>
             </ul>
             {id_ativo !== 4 && <div className='arrow right' onClick={mover}>&#8250;</div>}
           </div>

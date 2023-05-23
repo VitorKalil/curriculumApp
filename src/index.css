@@ -8,6 +8,13 @@ body{
   background-color: #EAE8FF;
 }
 
+p{font-size:16p;margin:20px}
+
+h2{font-size:24px; text-transform:uppercase; margin: 30px
+}
+input{height: 36px;
+  border: none;
+  font-size: 16px;}
 .lista {
   display:flex;
   list-style: none;
@@ -137,7 +144,7 @@ body{
 
 #divHabilidades{
   width:100%;
-  margin:0;
+  margin:40px 0 100px;
   display:flex;
 }
 
@@ -250,7 +257,7 @@ body{
 
 /* Experiencias - fim*/
 
-#tentativa {
+#SlideDiv {
   position: relative;
   margin: 0;
   padding: 0;
@@ -275,10 +282,29 @@ body{
 #slideshow li img{
   height:100%;
 }
-#outraTentativa{
+#FormsSlider{
+  padding: 2%;
+  margin:auto;
   width:50%;
 }
 
+#FormsSlider p, #FormsSlider h2{ color:black}
+#FormsSlider button{
+  cursor:pointer;
+  background: rgb(223, 18, 134);
+  border: none;
+  padding: 2%;
+  text-transform: uppercase;
+  color: white;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  border-radius: 4px;
+  transition: all 0.5s ease-in;
+}
+
+#FormsSlider button:hover{
+  background:rgb(192, 55, 174);
+  transform:translateY(-4px)
+}
 .arrow{
   position: absolute;
 top: 50%;
