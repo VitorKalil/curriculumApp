@@ -335,6 +335,7 @@ cursor:pointer
   transform:translateX(-80%);
   padding:0px;
   display:none;
+  z-index:999
 }
 
 li:hover #language_menu{display:block}

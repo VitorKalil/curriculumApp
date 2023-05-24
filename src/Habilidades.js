@@ -33,7 +33,6 @@ export default function Habilidades() {
     id_ativo.current = (id_ativo.current + i) < 0 ? 0 : (id_ativo.current + i)>= slide.length ? (slide.length-1) : (id_ativo.current +i)
     document.querySelector("#slideshow").style.transform = "translateX( "+(id_ativo.current*-600)+"px)"
   }
-
     return (
         <div id="divHabilidades">
           <div id="FormsSlider">
@@ -46,14 +45,15 @@ export default function Habilidades() {
             </form>
           </div>
           <div id = "SlideDiv">
-            {id_ativo !== 0 && <div className='arrow left' onClick={mover}>&#8249;</div>}
+
+            {id_ativo.current !== 0 && <div className='arrow left' onClick={mover}>&#8249;</div>}
             <ul id="slideshow">
-              <li>{fotos!==0 && <img src={fotos[rnd[0]].urls.raw} alt="fotos" id="foto_1"></img>}</li>
-              <li>{fotos!==0 && <img src={fotos[rnd[1]].urls.raw} alt="fotos" id="foto_2"></img>}</li>
-              <li>{fotos!==0 && <img src={fotos[rnd[2]].urls.raw} alt="fotos" id="foto_3"></img>}</li>
-              <li>{fotos!==0 && <img src={fotos[rnd[3]].urls.raw} alt="fotos" id="foto_4"></img>}</li>
+              <li>{fotos!==0 && <img src={fotos[rnd[0]].urls.raw +"&fit=crop&crop=faces&w=512&h=512"} alt="fotos" id="foto_1"></img>}</li>
+              <li>{fotos!==0 && <img src={fotos[rnd[1]].urls.raw +"&fit=crop&crop=faces&w=512&h=512"} alt="fotos" id="foto_2"></img>}</li>
+              <li>{fotos!==0 && <img src={fotos[rnd[2]].urls.raw +"&fit=crop&crop=faces&w=512&h=512"} alt="fotos" id="foto_3"></img>}</li>
+              <li>{fotos!==0 && <img src={fotos[rnd[3]].urls.raw +"&fit=crop&crop=faces&w=512&h=512"} alt="fotos" id="foto_4"></img>}</li>
             </ul>
-            {id_ativo !== 4 && <div className='arrow right' onClick={mover}>&#8250;</div>}
+            {id_ativo.current !== 3 && <div className='arrow right' onClick={mover}>&#8250;</div>}
           </div>
  <svg
   className="waves"
