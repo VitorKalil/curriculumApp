@@ -1,7 +1,8 @@
 import React from "react"
 import cards from "./Cards.json"
 
-export default function Experiencias() {
+export default function Experiencias(props) {
+    var idioma =props.idioma
     const [card,setCard] = React.useState(cards[0])
     const [porcentagem,setPorcentagem] = React.useState(0)
     React.useEffect(() =>{

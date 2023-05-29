@@ -1,7 +1,9 @@
 import { createApi } from 'unsplash-js';
 import React from 'react'
+import textos from "./Textos.json"
 
-export default function Habilidades() {
+export default function Habilidades(props) {
+  var idioma =props.idioma
   let id_ativo = React.useRef()
   React.useEffect(() => { id_ativo.current = 0},[])
   const [fotos,setFotos] = React.useState(0)
@@ -37,11 +39,11 @@ export default function Habilidades() {
         <div id="divHabilidades">
           <div id="FormsSlider">
             <h2>Image slider generator</h2>
-            <p>Escolha uma palavra para procurar 4 fotos aleatórias do invetário de fotos do <i>Unsplash</i></p>
+            <p>{textos[idioma]["Experimentos"]["texto gerador"]}</p>
             <form>
               <input type="text" placeholder="cat" id='inputFoto'
               />
-            <button onClick={procurar}>Procurar</button>
+            <button onClick={procurar}>{textos[idioma]["Experimentos"]["procurar"]}</button>
             </form>
           </div>
           <div id = "SlideDiv">

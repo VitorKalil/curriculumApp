@@ -8,7 +8,11 @@
             },
         "Quem Sou": "Quem Sou",
         "Historico":"Histórico",
-        "Experimentacao":"Experimentação"
+        "Experimentacao":"Experimentação",
+        "Experimentos":{
+            "texto gerador":"Escolha uma palavra para procurar 4 fotos aleatórias do inventário de fotos do Unsplash",
+            "procurar": "Procurar"
+        }
         
         }
     ,
@@ -21,8 +25,11 @@
         },
     "Quem Sou": "About me",
     "Historico":"Background",
-    "Experimentacao":"Experiments"
-    
+    "Experimentacao":"Experiments",
+    "Experimentos":{
+        "texto gerador":"Choose a word to search for 4 random photos from Unsplash's image library",
+        "procurar": "Search"
+    }
     }
     ,
 "it":
@@ -34,7 +41,11 @@
         },
     "Quem Sou": "Chi sono",
     "Historico":"Storico",
-    "Experimentacao":"Sperimentale"
+    "Experimentacao":"Sperimentale",
+    "Experimentos":{
+        "texto gerador":"Scegli una parola per cercare 4 foto a caso dall'inventario fotografico di Unsplash",
+        "procurar": "Cerca"
+    }
     
     }
     ,
@@ -47,7 +58,11 @@
         },
     "Quem Sou": "Über mich",
     "Historico":"Lebenslauf",
-    "Experimentacao":"Versuchsfeld"
+    "Experimentacao":"Versuchsfeld",
+    "Experimentos":{
+        "texto gerador":"Wählen Sie ein Wort, um nach 4 zufälligen Fotos aus der Bildbibliothek von Unsplash zu suchen",
+        "procurar": "Suche"
+    }
     
     }
 
