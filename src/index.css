@@ -1,7 +1,9 @@
 
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 body{
-  font-family:"Montserrat", sans-serif;
+  font-family:"Roboto Condensed", sans-serif;
   margin:0;
   padding:0;
   color: white;
