@@ -180,7 +180,7 @@ input{height: 36px;
   display: block;
   height: 3px;
   background: linear-gradient(to right, rgb(255,80,80,0) 0%, rgb(73, 100, 218) 8%, rgb(73, 100, 218) 92%, rgba(255,80,80,0) 100%);
-  transition: all 10s ease-in;
+  transition: all 1s ease-in;
 }
 
 
@@ -202,7 +202,9 @@ input{height: 36px;
 }
 .icone p{
   margin-top:-40px;
+  position:absolute;
   font-style: italic;
+  transform: translateX(-38%);
   font-size:18px;
   font-weight:600;
   color:rgb(73, 100, 218);
@@ -221,14 +223,9 @@ input{height: 36px;
   border-radius: 20px;
   box-shadow: 2px 4px 12px 0px rgba(0,0,0,0.15);
   display:flex;
+animation: fadeIn 1.5s;
+}
 
-}
-.orderTwo{
-  order:2;
-}
-.orderOne{
-  order:1;
-}
 .cardTempo h2{
   font-size: 2.4rem;
   font-weight: 700;
@@ -239,11 +236,13 @@ input{height: 36px;
   font-size:1.4em;
   font-style: italic;
   margin: 10px auto;
+
 }
 
 .cardTempo p{
   font-size:1.2em;
   color: #959595;
+
 }
 
 .fotoCard img{
@@ -256,8 +255,14 @@ input{height: 36px;
   margin:0;
   padding:0 2%;
 }
-
-/* Experiencias - fim*/
+.flexCard{
+  display:flex
+}
+.flexCard div{
+  flex:0 0 50%
+}
+  
+  /* Experiencias - fim*/
 
 #SlideDiv {
   position: relative;
@@ -346,3 +351,9 @@ li:hover #language_menu{display:block}
 
 #language_menu li {color:black;margin:0;display:block;padding: 15px;}
 
+/* keyframes*/
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
