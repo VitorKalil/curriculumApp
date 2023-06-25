@@ -8,22 +8,26 @@ import lg_ico from './language_icon.png'
 import textos from "./Textos.json"
 
 function App() {
+  const [darkOn,setDarkOn] = React.useState(false)
   const [lang,setLang] = React.useState('en')
   var paginas = {'home':<QuemSou idioma={lang} />,'habilidades':<Habilidades idioma={lang} />,'Experiencias':<Experiencias idioma={lang}/>} //defining the pages as an object, that relates the id of the button to the JX object
   const [pagina,setPagina]=React.useState('home') // starting the state for wich page should be shown
   function trocarPagina(evento){
     setPagina(evento.target.id)
   }
-
+function darkMode(){
+setDarkOn(prevValue => {return !prevValue})
+}
   function trocarLang(evento){
     setLang(evento.target.id)
   }
   var paginaAtual = paginas[pagina]
 
   return (
-    <div className="App">
+    <div className={darkOn?"App Dark":"App White"}>
         <nav className="navbar">
       <ul className="lista">
+        <li onClick ={darkMode} id ="darkmode_button">{darkOn?"On":"Off"}</li>
         <li onClick ={trocarPagina} id ="home">{textos[lang]["Quem Sou"]}</li>
         <li onClick ={trocarPagina} id ="habilidades">{textos[lang]["Experimentacao"]}</li>
         <li onClick ={trocarPagina} id ="Experiencias">{textos[lang]["Historico"]}</li>

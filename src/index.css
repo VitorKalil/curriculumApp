@@ -1,14 +1,44 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+html{height:100%}
 
 body{
   font-family:"Roboto Condensed", sans-serif;
   margin:0;
   padding:0;
-  color: white;
-  background-color: #EAE8FF;
+  height:100%;
 }
+
+#root{height:100%}
+.White{
+  --appBgColor: #EAE8FF;
+  --appTextColor:#ffffff;
+  --mainColor:rgb(223, 18, 134);
+  --subColor:rgb(73, 100, 218);
+  --generalTextColor:#000000;
+  --generalBgColor:#ffffff;
+  --navAnimation: myAnimation;
+  --navGradient:linear-gradient(163deg, rgb(73, 100, 218) 17%, rgba(146, 73, 221, 0.8) 29.6%, rgba(176, 60, 196, 0.6) 42.2%, rgba(192, 55, 173, 0.4) 54.8%, rgba(217, 46, 116, 0) 80%), radial-gradient(100% 100% at 10% 100%,rgba(146, 73, 221, 0.8) 0%,rgba(192, 55, 173, 0.4)20%, rgb(203, 97, 232) 30%, #da49e8 44.29%, #db44d7 68.57%, #da3fc8 82.86%, rgb(223, 18, 134) 100%);
+}
+
+.Dark{
+  --appBgColor: #333;
+  --appTextColor:#ffffff;
+  --mainColor:rgb(73, 100, 218);
+  --subColor:rgb(223, 18, 134);
+  --generalTextColor:#ffffff;
+  --generalBgColor:#333;
+  --navAnimation: myDarkAnimation;
+  --navGradient:linear-gradient(163deg, rgb(73, 100, 218) 17%, rgba(146, 73, 221, 0.8) 29.6%, rgba(176, 60, 196, 0.6) 42.2%, rgba(192, 55, 173, 0.4) 54.8%, rgba(217, 46, 116, 0) 80%), radial-gradient(100% 100% at 10% 100%,rgba(146, 73, 221, 0.8) 0%,rgba(192, 55, 173, 0.4)20%, rgb(203, 97, 232) 30%, #da49e8 44.29%, #db44d7 68.57%, #da3fc8 82.86%, rgb(223, 18, 134) 100%);
+}
+  .App{
+    height:100%;
+    padding-bottom:20px;
+    color: var(--appTextColor);
+    background-color: var(--appBgColor);
+  transition: background-color 2s ease;}
+
 
 p{font-size:16p;margin:20px}
 
@@ -42,14 +72,14 @@ input{height: 36px;
 }
 /* essa parte está diferente pois consiste numa animação finita*/
 .navbar {
-  background-image:linear-gradient(163deg, rgb(73, 100, 218) 17%, rgba(146, 73, 221, 0.8) 29.6%, rgba(176, 60, 196, 0.6) 42.2%, rgba(192, 55, 173, 0.4) 54.8%, rgba(217, 46, 116, 0) 80%), radial-gradient(100% 100% at 10% 100%,rgba(146, 73, 221, 0.8) 0%,rgba(192, 55, 173, 0.4)20%, rgb(203, 97, 232) 30%, #da49e8 44.29%, #db44d7 68.57%, #da3fc8 82.86%, rgb(223, 18, 134) 100%);;
+  background-image:var(--navGradient);
   background-size:400% 400%;
   margin:0;
   padding:0;
   flex-direction: row-reverse;
   display:flex;
   box-shadow: 2px 2px 10px  rgba(0,0,0,0.3);
-  animation: myAnimation 10s ease;
+  animation: var(--navAnimation) 5s ease;
   animation-fill-mode: forwards;
 }
 @keyframes myAnimation{
@@ -61,6 +91,15 @@ input{height: 36px;
 }
 
 }
+@keyframes myDarkAnimation{
+  0% {
+  background-position: 100% 50%;
+}
+100% {
+  background-position: 0% 50%;
+}
+
+}
 /* Aqui acaba a parte diferente
 .navbar:hover {
   animation-play-state:paused;
@@ -68,9 +107,10 @@ input{height: 36px;
 */
 
 #divInicial {
-  background-color: white;
+  background-color: var(--generalBgColor);
+  transition: background-color 2s ease;
   border-radius: 40px;
-  margin:6% 16%;
+  margin:3% 16%;
   display:flex;
   padding:5%;
   flex-wrap:wrap;
@@ -80,11 +120,10 @@ input{height: 36px;
   margin:0% 2%;
   width: 20%;
   border-radius: 50%;
-  border: 2px solid rgb(223, 18, 134);
+  border: 2px solid var(--mainColor);
 }
 #profileText{
-  margin: 10% 2%;
-
+  margin: 2%;
   width:100%;
 }
 
@@ -95,7 +134,7 @@ input{height: 36px;
 }
 
 .textoMedio {
-  color:black;
+  color:var(--generalTextColor);
   font-size: 19px;
   font-weight: 400; 
 }
@@ -145,8 +184,8 @@ input{height: 36px;
 }
 
 #divHabilidades{
-  width:100%;
-  margin:40px 0 100px;
+  width:90%;
+  margin:40px auto 100px;
   display:flex;
 }
 
@@ -179,7 +218,7 @@ input{height: 36px;
   margin: 150px 4% 0 4%;
   display: block;
   height: 3px;
-  background: linear-gradient(to right, rgb(255,80,80,0) 0%, rgb(73, 100, 218) 8%, rgb(73, 100, 218) 92%, rgba(255,80,80,0) 100%);
+  background: linear-gradient(to right, rgb(255,80,80,0) 0%, var(--mainColor) 8%, var(--subColor) 92%, rgba(255,80,80,0) 100%);
   transition: all 1s ease-in;
 }
 
@@ -193,11 +232,11 @@ input{height: 36px;
     margin-inline: 20px;
     background: transparent;
     border-radius: 10px;
-    border: 1px solid rgb(73, 100, 218);
+    border: 1px solid var(--subColor);
     z-index: 10;
 }
 .icone{
-  color:black;
+  color:var(--generalTextColor);
   text-align:center;
 }
 .icone p{
@@ -207,19 +246,20 @@ input{height: 36px;
   transform: translateX(-38%);
   font-size:18px;
   font-weight:600;
-  color:rgb(73, 100, 218);
+  color:var(--generalTextColor);
 
 }
 
 .selecionado {
-  background:rgb(73, 100, 218);
+  background:var(--subColor);
 }
 
 .cardTempo {
-  color:black;
+  color:var(--generalTextColor);
   padding:1% 2%;
   margin: 2% 10%;
-  background-color:white;
+  background-color:var(--generalBgColor);
+  transition: background-color 2s ease;
   border-radius: 20px;
   box-shadow: 2px 4px 12px 0px rgba(0,0,0,0.15);
   display:flex;
@@ -297,21 +337,21 @@ animation: fadeIn 1.5s;
   width:50%;
 }
 
-#FormsSlider p, #FormsSlider h2{ color:black}
+#FormsSlider p, #FormsSlider h2{ color:var(--generalTextColor)}
 #FormsSlider button{
   cursor:pointer;
-  background: rgb(223, 18, 134);
+  background: var(--mainColor);
   border: none;
   padding: 2%;
   text-transform: uppercase;
-  color: white;
+  color: var(--appTextColor);
   box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
   border-radius: 4px;
   transition: all 0.5s ease-in;
 }
 
 #FormsSlider button:hover{
-  background:rgb(192, 55, 174);
+  background:var(--subColor);
   transform:translateY(-4px)
 }
 .arrow{
@@ -340,7 +380,8 @@ cursor:pointer
 #language_menu{
   list-style: none;
   position: absolute;
-  background: #EAE8FF;
+  background: var(--appBgColor);
+  transition: background-color 2s ease;
   transform:translateX(-80%);
   padding:0px;
   display:none;
@@ -349,7 +390,7 @@ cursor:pointer
 
 li:hover #language_menu{display:block}
 
-#language_menu li {color:black;margin:0;display:block;padding: 15px;}
+#language_menu li {color:var(--generalTextColor);margin:0;display:block;padding: 15px;}
 
 /* keyframes*/
 
