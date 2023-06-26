@@ -398,3 +398,60 @@ li:hover #language_menu{display:block}
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
+
+
+/*dark mode button*/
+  #darkmode_button{display:none}
+	label {
+    display: flex;
+    align-items: center;
+		width: 100%;
+    height: 30px;
+    background: var(--appBgColor);
+		position: relative;
+		cursor: pointer;
+    transition:all 2s ease;
+    box-shadow: 2px 4px 12px 0px rgba(0,0,0,0.55),-3px -3px 4px 0px rgba(255,255,255,0.5);
+		border-radius: 1.6rem;
+  }
+		label::after {
+			content: "";
+      position: absolute;
+      left: 5px;
+			width: 20px;
+			height: 20px;
+      border-radius: 50%;
+      background: rgba(0,0,0,0.2);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image:url("./sun.png");
+      background-size: contain;
+      transition: all 2s ease;
+      }
+    label::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+      background: var(--appBgColor);
+      opacity: 0;
+      transition: all 2s ease;
+    }
+    #darkmode_button:checked + label{
+      box-shadow: 2px 2px 8px 0px rgba(255,255,255,0.35),-3px -3px 4px 0px rgba(0,0,0,0.5);
+
+    }
+    #darkmode_button:checked + label::before{ opacity:1}
+    #darkmode_button:checked + label::after{ 
+      left:58%;
+      background-size: contain;
+      background-size: 70%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image:url("./moon.png");
+    }
+    #darkModeDiv{position: absolute;
+      left: 20px;
+      top: 20px;
+      width: 60px;}

@@ -26,8 +26,11 @@ setDarkOn(prevValue => {return !prevValue})
   return (
     <div className={darkOn?"App Dark":"App White"}>
         <nav className="navbar">
+        <div id="darkModeDiv">
+          <input onChange ={darkMode} id ="darkmode_button" type ="checkbox" checked={darkOn} />
+          <label for="darkmode_button"></label>
+        </div>
       <ul className="lista">
-        <li onClick ={darkMode} id ="darkmode_button">{darkOn?"On":"Off"}</li>
         <li onClick ={trocarPagina} id ="home">{textos[lang]["Quem Sou"]}</li>
         <li onClick ={trocarPagina} id ="habilidades">{textos[lang]["Experimentacao"]}</li>
         <li onClick ={trocarPagina} id ="Experiencias">{textos[lang]["Historico"]}</li>
