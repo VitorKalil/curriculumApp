@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
-html{height:100%}
+
 
 body{
   font-family:"Roboto Condensed", sans-serif;
@@ -14,6 +14,7 @@ body{
 .White{
   --appBgColor: #EAE8FF;
   --appTextColor:#ffffff;
+  --appSubColor:#acacac;
   --mainColor:rgb(223, 18, 134);
   --subColor:rgb(73, 100, 218);
   --generalTextColor:#000000;
@@ -25,6 +26,7 @@ body{
 .Dark{
   --appBgColor: #333;
   --appTextColor:#ffffff;
+  --appSubColor:#ededed;
   --mainColor:rgb(73, 100, 218);
   --subColor:rgb(223, 18, 134);
   --generalTextColor:#ffffff;
@@ -48,12 +50,12 @@ input{height: 36px;
   border: none;
   font-size: 16px;}
 .lista {
+  order:2;
   display:flex;
   list-style: none;
   align-content: flex-end;
   font-weight:500;
   letter-spacing: 2px;
-  
   margin:0;
   
 }
@@ -66,12 +68,11 @@ input{height: 36px;
 .lista li:hover{
   background-color:rgba(0, 0, 0, 0.2);
 }
-
-.lista li:last-child{
-  margin-right:25px;
-}
 /* essa parte está diferente pois consiste numa animação finita*/
 .navbar {
+  height:74px;
+  overflow-x:hidden;
+  align-items: center;
   background-image:var(--navGradient);
   background-size:400% 400%;
   margin:0;
@@ -100,11 +101,59 @@ input{height: 36px;
 }
 
 }
-/* Aqui acaba a parte diferente
-.navbar:hover {
-  animation-play-state:paused;
+
+/*Menu desktop*/
+@media only screen and (min-width:767px){
+#mobile_menu{display:none}
+.mobile_menu_logo{display:none}
+  
 }
-*/
+
+
+/* Menu mobile*/
+
+@media only screen and (max-width:767px){
+  #desktop_menu{display:none}
+  .logo_header{margin-left:0 !important;}
+  #mobile_menu{
+    transition:all 0.5s ease-in;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index:999;
+    left:100%;
+    top: 74px;
+    background: var(--appBgColor);
+  }
+  #language_menu{width:170px !important}
+  .mobile_menu_logo{
+    transition: all 1s ease;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image:url("./menu.png");}
+    .mobile_menu_logo.active_menu{background-image:url("./cross.png") !important;}
+  .active_menu{left:0 !important;}
+  #mobile_menu ul {
+    display:block;
+    list-style: none;
+    padding:0;
+    margin:0;
+  }
+  #mobile_menu li {
+    display:block;
+    font-weight:500;
+    letter-spacing: 2px;
+    color:var(--generalTextColor);
+    padding: 40px;
+    font-size: 22px;
+    border-bottom: 1px solid var(--appSubColor);
+  }
+  #mobile_menu li:active,#mobile_menu li:focus{
+    background-color: #959595;
+  }
+}
 
 #divInicial {
   background-color: var(--generalBgColor);
@@ -375,23 +424,31 @@ cursor:pointer
 
 
 /*language do header*/
-#logo_header{width:20px;}
-
+.logo_header{width:20px;height:20px;margin-inline:25px}
+#langDiv{
+  order:1;
+  margin-bottom:-4px;
+  display: flex;
+  align-items: center;
+height:90%}
 #language_menu{
+  cursor: pointer;
   list-style: none;
+  top:57px;
+  width:140px;
   position: absolute;
   background: var(--appBgColor);
   transition: background-color 2s ease;
-  transform:translateX(-80%);
+  transform:translateX(-50%);
   padding:0px;
   display:none;
   z-index:999
 }
 
-li:hover #language_menu{display:block}
+#langDiv:hover #language_menu{display:block}
 
-#language_menu li {color:var(--generalTextColor);margin:0;display:block;padding: 15px;}
-
+#language_menu li {transition: background-color 0.4s ease;background-color:rgba(0,0,0,0.1);color:var(--generalTextColor);margin:0;display:block;padding: 15px;border-bottom: 1px solid var(--appSubColor)}
+#language_menu li:hover{background-color:rgba(0,0,0,0.3)}
 /* keyframes*/
 
 @keyframes fadeIn {
@@ -455,3 +512,4 @@ li:hover #language_menu{display:block}
       left: 20px;
       top: 20px;
       width: 60px;}
+
