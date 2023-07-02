@@ -12,22 +12,27 @@ export default function Experiencias(props) {
     var novaPorcentagem
     function selecionarCard(evento){
         setCard(cards[idioma][evento.target.id])
-        console.log(evento.target.id)
-        console.log(cards[idioma].length)
         novaPorcentagem = 8+76*((evento.target.id)/(cards[idioma].length-1))
         for(let i = 0;i<cards[idioma].length;i++){
             i<=(evento.target.id) ? document.querySelectorAll('.iconeEsferico')[i].classList.add('selecionado'):document.querySelectorAll('.iconeEsferico')[i].classList.remove('selecionado')
         }
         setPorcentagem(novaPorcentagem)
     }
+
+    function dropdown(e){
+        setCard(cards[idioma][e.target.value])
+    }
+
+
     var comprimento = porcentagem + "%"
     var iconesCards = cards[idioma].map (card => <div className="icone" key={card.id} ><div className="iconeEsferico" id={card.id} onClick={selecionarCard}></div><p>{card.ano}</p></div>)
+    var optionCards = cards[idioma].map (card => <option className="optionHistorico" value={card.id} key={card.id} >{card.ano}</option>)
     var elementoCard = (
         <div className="cardTempo">
         <div className="cardContent">
             <h2>{card.titulo}</h2>
             <em> {card.subtitulo}</em>
-            <div className="flexCard" style = {{"flex-direction":card.orderCard}}>
+            <div className="flexCard" style = {{"flexDirection":card.orderCard}}>
                 <div className="CardImage"><img src={card.imagem} alt={"slide " + card.id}></img></div>
                 <p>{card.texto}</p>
             </div>
@@ -37,10 +42,19 @@ export default function Experiencias(props) {
 
     return (
         <div id = "divExperiencias">
-        <div id="linhaTempo" style = {{width:comprimento}}></div>
-        <div className ="listaIcones">
-            {iconesCards} 
-        </div>
+            <div id="linhaTempo" style = {{width:comprimento}}></div>
+            {window.innerWidth <767 && 
+                <div id="formsAnos">
+                    <form>
+                        <legend>Ano</legend>
+                    <select onChange={dropdown}>
+                        {optionCards}
+                    </select>
+                    </form>
+                </div>}
+            <div className ="listaIcones">
+                {iconesCards} 
+            </div>
             {elementoCard}
         </div>
     )

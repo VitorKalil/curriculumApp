@@ -30,10 +30,11 @@ export default function Habilidades(props) {
 
   }
   function mover(evento){
+    var width = window.innerWidth > 767 ? 600 : 351
     var i = evento.target.className === "arrow left" ? -1 : 1
     var slide = document.querySelectorAll("#slideshow li")
     id_ativo.current = (id_ativo.current + i) < 0 ? 0 : (id_ativo.current + i)>= slide.length ? (slide.length-1) : (id_ativo.current +i)
-    document.querySelector("#slideshow").style.transform = "translateX( "+(id_ativo.current*-600)+"px)"
+    document.querySelector("#slideshow").style.transform = "translateX( "+(id_ativo.current*-width)+"px)"
   }
     return (
         <div id="divHabilidades">

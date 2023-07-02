@@ -42,7 +42,7 @@ body{
   transition: background-color 2s ease;}
 
 
-p{font-size:16p;margin:20px}
+p{font-size:16px;margin:20px}
 
 h2{font-size:24px; text-transform:uppercase; margin: 30px
 }
@@ -154,7 +154,7 @@ input{height: 36px;
     background-color: #959595;
   }
 }
-
+/* First Page*/
 #divInicial {
   background-color: var(--generalBgColor);
   transition: background-color 2s ease;
@@ -188,6 +188,17 @@ input{height: 36px;
   font-weight: 400; 
 }
 
+@media only screen and (max-width:767px){
+
+  #divInicial {
+    margin:100px 3% 200px;
+  }
+  p.textoMedio{
+    font-size:16px;
+    padding-top:20px
+  }
+
+}
 /* animação de ondas - início*/
 
 .parallax > use {
@@ -238,6 +249,15 @@ input{height: 36px;
   display:flex;
 }
 
+
+@media only screen and (max-width:767px){
+  #divHabilidades{ flex-direction:column; margin:20px 20px 80px}
+  #FormsSlider{width:100% !important; margin: 0 0 80px !important}
+  .waves{margin-left:-20px}
+  #slideshow{width:351px !important}
+  p{margin:8px !important}
+
+}
 /* animação de ondas - fim*/
 
 /* Experiencias - início*/
@@ -351,6 +371,17 @@ animation: fadeIn 1.5s;
   flex:0 0 50%
 }
   
+
+@media only screen and (max-width:767px){
+#linhaTempo,.listaIcones{display:none}
+.cardTempo{margin:40px 3% !important}
+#divExperiencias{padding:100px 0 150px}
+.cardTempo h2{font-size:32px}
+.flexCard{flex-direction: column-reverse !important;}
+#formsAnos form{display:flex;justify-content: center;}
+#formsAnos form legend{transition:all 1s ease;color:var(--generalTextColor);margin-inline:20px;font-size:20px}
+#formsAnos form select{width: 33%;text-align: center;font-size: 16px;}
+}
   /* Experiencias - fim*/
 
 #SlideDiv {
