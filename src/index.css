@@ -171,10 +171,13 @@ input{height: 36px;
   border-radius: 50%;
   border: 2px solid var(--mainColor);
 }
-#profileText{
-  margin: 2%;
+.profileText{
   width:100%;
+  text-align: left;
+  text-indent:19px
 }
+.text_1{margin: 4% 2% 1%;}
+.text_2{margin: 1% 2%;}
 
 #profileIntro{
   padding-top: 4%;
@@ -368,9 +371,9 @@ animation: fadeIn 1.5s;
   display:flex
 }
 .flexCard div{
-  flex:0 0 50%
+  flex:0 0 40%
 }
-  
+.CardImage img{width:100%} 
 
 @media only screen and (max-width:767px){
 #linhaTempo,.listaIcones{display:none}

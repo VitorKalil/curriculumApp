@@ -10,7 +10,7 @@ import textos from "./Textos.json"
 function App() {
   const [darkOn,setDarkOn] = React.useState(false)
   const [lang,setLang] = React.useState('en')
-  var paginas = {'home':<QuemSou idioma={lang} />,'habilidades':<Habilidades idioma={lang} />,'Experiencias':<Experiencias idioma={lang}/>} //defining the pages as an object, that relates the id of the button to the JX object
+  var paginas = {'home':<QuemSou idioma={lang} />,'habilidades':<Habilidades idioma={lang} />,'Experiencias':<Experiencias idioma={lang} darkmode = {darkOn}/>} //defining the pages as an object, that relates the id of the button to the JX object
   const [pagina,setPagina]=React.useState('home') // starting the state for wich page should be shown
   function trocarPagina(evento){
     setPagina(evento.target.attributes.nomepagina.value)

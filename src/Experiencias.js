@@ -1,7 +1,15 @@
 import React from "react"
 import cards from "./Cards.json"
+import ChemicalE from "./ChemicalE.jpg"
+import flag from "./flag.jpg"
+import html from "./html-css-javascript.jpg"
+import peg from "./peg.jpg"
+import hashtagb from "./hashtag_logo_b.png"
+import hashtagw from "./hashtag_logo_w.png"
+
 
 export default function Experiencias(props) {
+    var imagens = [flag,ChemicalE,peg,html,props.darkmode === true ? hashtagw:hashtagb]
     var idioma =props.idioma
     const [card,setCard] = React.useState(cards[idioma][0])
     const [porcentagem,setPorcentagem] = React.useState(8)
@@ -33,7 +41,7 @@ export default function Experiencias(props) {
             <h2>{card.titulo}</h2>
             <em> {card.subtitulo}</em>
             <div className="flexCard" style = {{"flexDirection":card.orderCard}}>
-                <div className="CardImage"><img src={card.imagem} alt={"slide " + card.id}></img></div>
+                <div className="CardImage"><img src={imagens[card.id]} alt={"slide " + card.id} ></img></div>
                 <p>{card.texto}</p>
             </div>
         </div>

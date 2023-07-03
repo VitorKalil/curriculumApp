@@ -11,8 +11,11 @@ export default function QuemSou(props) {
         <i> Vitor Kalil</i><br />
         <i> Front-end Webdesigner</i>
       </div>
-      <p id="profileText" className="textoMedio">
-        {textos[idioma]["texto-inicial"]["texto"]}
+      <p className="textoMedio profileText text_1">
+        {textos[idioma]["texto-inicial"]["texto_1"]}
+      </p>
+      <p className="textoMedio profileText text_2">
+        {textos[idioma]["texto-inicial"]["texto_2"]}
       </p>
     </div>
     )

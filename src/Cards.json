@@ -6,7 +6,7 @@
         "subtitulo":"",
         "texto":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor tincidunt sapien, et malesuada nisl tempor at. Donec malesuada, ipsum in commodo condimentum, mi nulla faucibus neque, vitae imperdiet eros arcu tincidunt ex. Integer rutrum ornare justo sed mattis. Nulla a odio vel nisi tristique pretium eget et neque. Mauris blandit rutrum risus, sit amet interdum leo mattis quis. Phasellus pharetra sed lacus a volutpat. Vivamus aliquet magna tellus. Maecenas consectetur finibus metus quis convallis.",
         "orderCard":"row-reverse",
-        "imagem":"./foto.png"
+        "imagem":"./flag.jpg"
     },
     {
         "id":"1",
@@ -15,7 +15,7 @@
         "subtitulo":"2016 - Set/2022",
         "texto":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor tincidunt sapien, et malesuada nisl tempor at. Donec malesuada, ipsum in commodo condimentum, mi nulla faucibus neque, vitae imperdiet eros arcu tincidunt ex. Integer rutrum ornare justo sed mattis. Nulla a odio vel nisi tristique pretium eget et neque. Mauris blandit rutrum risus, sit amet interdum leo mattis quis. Phasellus pharetra sed lacus a volutpat. Vivamus aliquet magna tellus. Maecenas consectetur finibus metus quis convallis.",
         "orderCard":"row",
-        "imagem":"./foto.png"
+        "imagem":"./ChemicalE.jpg"
     },
     {
         "id":"2",
@@ -24,7 +24,7 @@
         "subtitulo":"Ago/2021 - Mar/2022",
         "texto":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor tincidunt sapien, et malesuada nisl tempor at. Donec malesuada, ipsum in commodo condimentum, mi nulla faucibus neque, vitae imperdiet eros arcu tincidunt ex. Integer rutrum ornare justo sed mattis. Nulla a odio vel nisi tristique pretium eget et neque. Mauris blandit rutrum risus, sit amet interdum leo mattis quis. Phasellus pharetra sed lacus a volutpat. Vivamus aliquet magna tellus. Maecenas consectetur finibus metus quis convallis.",
         "orderCard":"row-reverse",
-        "imagem":"./foto.png"
+        "imagem":"./itatiaia.jpg"
     },
     {
         "id":"3",
@@ -33,7 +33,7 @@
         "subtitulo":"Ago/2022 - Fev/2023",
         "texto":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor tincidunt sapien, et malesuada nisl tempor at. Donec malesuada, ipsum in commodo condimentum, mi nulla faucibus neque, vitae imperdiet eros arcu tincidunt ex. Integer rutrum ornare justo sed mattis. Nulla a odio vel nisi tristique pretium eget et neque. Mauris blandit rutrum risus, sit amet interdum leo mattis quis. Phasellus pharetra sed lacus a volutpat. Vivamus aliquet magna tellus. Maecenas consectetur finibus metus quis convallis.",
         "orderCard":"row",
-        "imagem":"./foto.png"
+        "imagem":"./html-css-javascript.jpg"
     },
     {
         "id":"4",
@@ -52,7 +52,7 @@
         "subtitulo":"",
         "texto":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor tincidunt sapien, et malesuada nisl tempor at. Donec malesuada, ipsum in commodo condimentum, mi nulla faucibus neque, vitae imperdiet eros arcu tincidunt ex. Integer rutrum ornare justo sed mattis. Nulla a odio vel nisi tristique pretium eget et neque. Mauris blandit rutrum risus, sit amet interdum leo mattis quis. Phasellus pharetra sed lacus a volutpat. Vivamus aliquet magna tellus. Maecenas consectetur finibus metus quis convallis.",
         "orderCard":"row-reverse",
-        "imagem":"./foto.png"
+        "imagem":"./flag.jpg"
     },
     {
         "id":"1",
@@ -61,7 +61,7 @@
         "subtitulo":"2016 - Sep/2022",
         "texto":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor tincidunt sapien, et malesuada nisl tempor at. Donec malesuada, ipsum in commodo condimentum, mi nulla faucibus neque, vitae imperdiet eros arcu tincidunt ex. Integer rutrum ornare justo sed mattis. Nulla a odio vel nisi tristique pretium eget et neque. Mauris blandit rutrum risus, sit amet interdum leo mattis quis. Phasellus pharetra sed lacus a volutpat. Vivamus aliquet magna tellus. Maecenas consectetur finibus metus quis convallis.",
         "orderCard":"row",
-        "imagem":"./foto.png"
+        "imagem":"./ChemicalE.jpg"
     },
     {
         "id":"2",
@@ -70,7 +70,7 @@
         "subtitulo":"Aug/2021 - Mar/2022",
         "texto":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor tincidunt sapien, et malesuada nisl tempor at. Donec malesuada, ipsum in commodo condimentum, mi nulla faucibus neque, vitae imperdiet eros arcu tincidunt ex. Integer rutrum ornare justo sed mattis. Nulla a odio vel nisi tristique pretium eget et neque. Mauris blandit rutrum risus, sit amet interdum leo mattis quis. Phasellus pharetra sed lacus a volutpat. Vivamus aliquet magna tellus. Maecenas consectetur finibus metus quis convallis.",
         "orderCard":"row-reverse",
-        "imagem":"./foto.png"
+        "imagem":"./itatiaia.jpg"
     },
     {
         "id":"3",
@@ -79,7 +79,7 @@
         "subtitulo":"Aug/2022 - Feb/2023",
         "texto":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor tincidunt sapien, et malesuada nisl tempor at. Donec malesuada, ipsum in commodo condimentum, mi nulla faucibus neque, vitae imperdiet eros arcu tincidunt ex. Integer rutrum ornare justo sed mattis. Nulla a odio vel nisi tristique pretium eget et neque. Mauris blandit rutrum risus, sit amet interdum leo mattis quis. Phasellus pharetra sed lacus a volutpat. Vivamus aliquet magna tellus. Maecenas consectetur finibus metus quis convallis.",
         "orderCard":"row",
-        "imagem":"./foto.png"
+        "imagem":"./html-css-javascript.jpg"
     },
     {
         "id":"4",
@@ -98,7 +98,7 @@
         "subtitulo":"",
         "texto":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor tincidunt sapien, et malesuada nisl tempor at. Donec malesuada, ipsum in commodo condimentum, mi nulla faucibus neque, vitae imperdiet eros arcu tincidunt ex. Integer rutrum ornare justo sed mattis. Nulla a odio vel nisi tristique pretium eget et neque. Mauris blandit rutrum risus, sit amet interdum leo mattis quis. Phasellus pharetra sed lacus a volutpat. Vivamus aliquet magna tellus. Maecenas consectetur finibus metus quis convallis.",
         "orderCard":"row-reverse",
-        "imagem":"./foto.png"
+        "imagem":"./flag.jpg"
     },
     {
         "id":"1",
@@ -107,7 +107,7 @@
         "subtitulo":"2016 - Sett/2022",
         "texto":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor tincidunt sapien, et malesuada nisl tempor at. Donec malesuada, ipsum in commodo condimentum, mi nulla faucibus neque, vitae imperdiet eros arcu tincidunt ex. Integer rutrum ornare justo sed mattis. Nulla a odio vel nisi tristique pretium eget et neque. Mauris blandit rutrum risus, sit amet interdum leo mattis quis. Phasellus pharetra sed lacus a volutpat. Vivamus aliquet magna tellus. Maecenas consectetur finibus metus quis convallis.",
         "orderCard":"row",
-        "imagem":"./foto.png"
+        "imagem":"./ChemicalE.jpg"
     },
     {
         "id":"2",
@@ -116,7 +116,7 @@
         "subtitulo":"Ago/2021 - Mar/2022",
         "texto":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor tincidunt sapien, et malesuada nisl tempor at. Donec malesuada, ipsum in commodo condimentum, mi nulla faucibus neque, vitae imperdiet eros arcu tincidunt ex. Integer rutrum ornare justo sed mattis. Nulla a odio vel nisi tristique pretium eget et neque. Mauris blandit rutrum risus, sit amet interdum leo mattis quis. Phasellus pharetra sed lacus a volutpat. Vivamus aliquet magna tellus. Maecenas consectetur finibus metus quis convallis.",
         "orderCard":"row-reverse",
-        "imagem":"./foto.png"
+        "imagem":"./itatiaia.jpg"
     },
     {
         "id":"3",
@@ -125,7 +125,7 @@
         "subtitulo":"Ago/2022 - Feb/2023",
         "texto":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor tincidunt sapien, et malesuada nisl tempor at. Donec malesuada, ipsum in commodo condimentum, mi nulla faucibus neque, vitae imperdiet eros arcu tincidunt ex. Integer rutrum ornare justo sed mattis. Nulla a odio vel nisi tristique pretium eget et neque. Mauris blandit rutrum risus, sit amet interdum leo mattis quis. Phasellus pharetra sed lacus a volutpat. Vivamus aliquet magna tellus. Maecenas consectetur finibus metus quis convallis.",
         "orderCard":"row",
-        "imagem":"./foto.png"
+        "imagem":"./html-css-javascript.jpg"
     },
     {
         "id":"4",
@@ -144,7 +144,7 @@
         "subtitulo":"",
         "texto":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor tincidunt sapien, et malesuada nisl tempor at. Donec malesuada, ipsum in commodo condimentum, mi nulla faucibus neque, vitae imperdiet eros arcu tincidunt ex. Integer rutrum ornare justo sed mattis. Nulla a odio vel nisi tristique pretium eget et neque. Mauris blandit rutrum risus, sit amet interdum leo mattis quis. Phasellus pharetra sed lacus a volutpat. Vivamus aliquet magna tellus. Maecenas consectetur finibus metus quis convallis.",
         "orderCard":"row-reverse",
-        "imagem":"./foto.png"
+        "imagem":"./flag.jpg"
     },
     {
         "id":"1",
@@ -153,7 +153,7 @@
         "subtitulo":"2016 - Sep/2022",
         "texto":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor tincidunt sapien, et malesuada nisl tempor at. Donec malesuada, ipsum in commodo condimentum, mi nulla faucibus neque, vitae imperdiet eros arcu tincidunt ex. Integer rutrum ornare justo sed mattis. Nulla a odio vel nisi tristique pretium eget et neque. Mauris blandit rutrum risus, sit amet interdum leo mattis quis. Phasellus pharetra sed lacus a volutpat. Vivamus aliquet magna tellus. Maecenas consectetur finibus metus quis convallis.",
         "orderCard":"row",
-        "imagem":"./foto.png"
+        "imagem":"./ChemicalE.jpg"
     },
     {
         "id":"2",
@@ -162,7 +162,7 @@
         "subtitulo":"Aug/2021 - Mrz/2022",
         "texto":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor tincidunt sapien, et malesuada nisl tempor at. Donec malesuada, ipsum in commodo condimentum, mi nulla faucibus neque, vitae imperdiet eros arcu tincidunt ex. Integer rutrum ornare justo sed mattis. Nulla a odio vel nisi tristique pretium eget et neque. Mauris blandit rutrum risus, sit amet interdum leo mattis quis. Phasellus pharetra sed lacus a volutpat. Vivamus aliquet magna tellus. Maecenas consectetur finibus metus quis convallis.",
         "orderCard":"row-reverse",
-        "imagem":"./foto.png"
+        "imagem":"./itatiaia.jpg"
     },
     {
         "id":"3",
@@ -171,7 +171,7 @@
         "subtitulo":"Aug/2022 - Feb/2023",
         "texto":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor tincidunt sapien, et malesuada nisl tempor at. Donec malesuada, ipsum in commodo condimentum, mi nulla faucibus neque, vitae imperdiet eros arcu tincidunt ex. Integer rutrum ornare justo sed mattis. Nulla a odio vel nisi tristique pretium eget et neque. Mauris blandit rutrum risus, sit amet interdum leo mattis quis. Phasellus pharetra sed lacus a volutpat. Vivamus aliquet magna tellus. Maecenas consectetur finibus metus quis convallis.",
         "orderCard":"row",
-        "imagem":"./foto.png"
+        "imagem":"./html-css-javascript.jpg"
     },
     {
         "id":"4",
